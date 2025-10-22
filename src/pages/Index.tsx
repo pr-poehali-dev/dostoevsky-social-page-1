@@ -62,7 +62,7 @@ const Index = () => {
             <div className="px-8 pb-8">
               <div className="relative -mt-16 mb-6">
                 <Avatar className="w-32 h-32 border-8 border-white shadow-xl ring-4 ring-[#8B4513]/20">
-                  <AvatarImage src="https://v3b.fal.media/files/b/koala/rQnqZTraNatXvYliNZI-Q_output.png" alt="Ф. М. Достоевский" />
+                  <AvatarImage src="https://cdn.poehali.dev/projects/9470338f-2274-4a0f-8203-3ecf0c263996/files/c21810b3-9001-4864-9db9-47d95c2feadd.jpg" alt="Ф. М. Достоевский" />
                   <AvatarFallback className="text-4xl font-display bg-[#8B4513] text-white">ФД</AvatarFallback>
                 </Avatar>
               </div>
