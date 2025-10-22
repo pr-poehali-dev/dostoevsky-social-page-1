@@ -97,7 +97,8 @@ const Index = () => {
                   { id: "friends", label: "Друзья", icon: "Users" },
                   { id: "activities", label: "Занятия", icon: "Sparkles" },
                   { id: "food", label: "Еда", icon: "Coffee" },
-                  { id: "quotes", label: "Цитаты", icon: "Quote" }
+                  { id: "quotes", label: "Цитаты", icon: "Quote" },
+                  { id: "awards", label: "Награды", icon: "Award" }
                 ].map((tab) => (
                   <button
                     key={tab.id}
@@ -280,6 +281,55 @@ const Index = () => {
                           </div>
                         </Card>
                       ))}
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === "awards" && (
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-[#8B4513] pl-6 py-2 mb-6">
+                      <h3 className="text-2xl font-display font-bold text-[#2C1810]">Награды и признание</h3>
+                      <p className="text-[#5A2D0C]/80 mt-2">Почести и звания при жизни</p>
+                    </div>
+                    <div className="grid gap-4">
+                      <Card className="p-6 bg-gradient-to-r from-white to-[#F5F5DC]/30 border-[#8B4513]/20 hover:shadow-lg transition-all">
+                        <div className="flex items-start gap-4">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FFD700] to-[#FFA500] flex items-center justify-center border-4 border-[#8B4513]/20 shadow-lg">
+                            <Icon name="Award" className="text-white" size={32} />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-display font-bold text-xl text-[#2C1810] mb-2">Почётный академик</h4>
+                            <p className="text-sm text-[#5A2D0C]/80 mb-1">Императорская Академия наук, 1877 год</p>
+                            <p className="text-sm text-[#5A2D0C]/90">Избран почётным членом Отделения русского языка и словесности за выдающийся вклад в русскую литературу</p>
+                          </div>
+                        </div>
+                      </Card>
+
+                      <Card className="p-6 bg-gradient-to-r from-white to-[#F5F5DC]/30 border-[#8B4513]/20 hover:shadow-lg transition-all">
+                        <div className="flex items-start gap-4">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#C0C0C0] to-[#808080] flex items-center justify-center border-4 border-[#8B4513]/20 shadow-lg">
+                            <Icon name="Medal" className="text-white" size={32} />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-display font-bold text-xl text-[#2C1810] mb-2">Пушкинская премия</h4>
+                            <p className="text-sm text-[#5A2D0C]/80 mb-1">Академия наук, 1880 год</p>
+                            <p className="text-sm text-[#5A2D0C]/90">Награда за роман "Братья Карамазовы" — величайшее произведение русской литературы</p>
+                          </div>
+                        </div>
+                      </Card>
+
+                      <Card className="p-6 bg-gradient-to-r from-white to-[#F5F5DC]/30 border-[#8B4513]/20 hover:shadow-lg transition-all">
+                        <div className="flex items-start gap-4">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#8B4513] to-[#5A2D0C] flex items-center justify-center border-4 border-[#8B4513]/20 shadow-lg">
+                            <Icon name="Crown" className="text-[#FFD700]" size={32} />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-display font-bold text-xl text-[#2C1810] mb-2">Признание современников</h4>
+                            <p className="text-sm text-[#5A2D0C]/80 mb-1">При жизни и после смерти</p>
+                            <p className="text-sm text-[#5A2D0C]/90">Знаменитая Пушкинская речь 1880 года вызвала небывалый восторг публики и признание как величайшего мыслителя эпохи</p>
+                          </div>
+                        </div>
+                      </Card>
                     </div>
                   </div>
                 )}
